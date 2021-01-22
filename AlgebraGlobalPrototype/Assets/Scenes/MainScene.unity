@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 2665497975508096704, guid: 8bdea64c5b292a649965bd84e439f065,
         type: 3}
       propertyPath: m_Name
-      value: Player3
+      value: Character3
       objectReference: {fileID: 0}
     - target: {fileID: 7532402095505583046, guid: 8bdea64c5b292a649965bd84e439f065,
         type: 3}
@@ -206,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 486951953981418679, guid: 161b2819a193204468c1d2a6bc0afbc6,
         type: 3}
       propertyPath: m_Name
-      value: Player4
+      value: Character4
       objectReference: {fileID: 0}
     - target: {fileID: 5383973905076900273, guid: 161b2819a193204468c1d2a6bc0afbc6,
         type: 3}
@@ -330,7 +330,7 @@ PrefabInstance:
     - target: {fileID: 5782458152866199515, guid: 3e56b0c31e92bb6469659ff8eb8bc267,
         type: 3}
       propertyPath: m_Name
-      value: Player1
+      value: Character1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e56b0c31e92bb6469659ff8eb8bc267, type: 3}
@@ -399,7 +399,7 @@ PrefabInstance:
     - target: {fileID: 5567711245770280519, guid: f4ddb9c8d7fc2224e9e06df25f3af161,
         type: 3}
       propertyPath: m_Name
-      value: Player2
+      value: Character2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4ddb9c8d7fc2224e9e06df25f3af161, type: 3}
