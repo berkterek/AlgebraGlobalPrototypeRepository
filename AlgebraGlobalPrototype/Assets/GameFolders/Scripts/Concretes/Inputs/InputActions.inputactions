@@ -1,1 +1,44 @@
-﻿{}
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "OnFoot",
+            "id": "bc0811e6-c10b-4209-a2b2-4a343e48f1ae",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "PassThrough",
+                    "id": "bbbed036-a79f-4452-ba71-52306b6f925c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "df82290d-01c0-4d3f-955c-b40aa54b1c0a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d1d3b92-abbf-471c-80c7-47dc056a45d6",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
