@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using AlgebraGlobalPrototype.Abstracts.Utilities;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace AlgebraGlobalPrototype.Managers
 {
@@ -12,8 +13,11 @@ namespace AlgebraGlobalPrototype.Managers
         {
             SingletonThisObject(this);
         }
-        
-        
+
+        private IEnumerator Start()
+        {
+            yield return SceneManager.LoadSceneAsync("SplashScene");
+        }
     }    
 }
 
