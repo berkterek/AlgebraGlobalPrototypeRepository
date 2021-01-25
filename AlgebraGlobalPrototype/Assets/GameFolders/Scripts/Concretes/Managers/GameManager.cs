@@ -17,17 +17,17 @@ namespace AlgebraGlobalPrototype.Managers
             SingletonThisObject(this);
         }
 
-        // private IEnumerator Start()
-        // {
-        //     var loadOperation = SceneManager.LoadSceneAsync("SplashScene");
-        //     
-        //     while (!loadOperation.isDone)
-        //     {
-        //         yield return null;
-        //     }
-        //     
-        //     loadOperation.completed += Oncompleted;
-        // }
+        private IEnumerator Start()
+        {
+            var loadOperation = SceneManager.LoadSceneAsync("SplashScene");
+            
+            while (!loadOperation.isDone)
+            {
+                yield return null;
+            }
+            
+            loadOperation.completed += Oncompleted;
+        }
 
         private void Oncompleted(AsyncOperation obj)
         {

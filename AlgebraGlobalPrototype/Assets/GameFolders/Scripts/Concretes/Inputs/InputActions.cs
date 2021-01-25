@@ -51,9 +51,31 @@ namespace AlgebraGlobalPrototyle.Inputs
                 },
                 {
                     ""name"": """",
+                    ""id"": ""a6a3cf6f-b5f2-49be-92f0-b2ed9d0e77f5"",
+                    ""path"": ""<Touchscreen>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ClickPosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""76e661a5-a622-4d5f-9df1-9975d84ebbb8"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b38e4e82-c593-4881-ae28-0264b1a963aa"",
+                    ""path"": ""<Touchscreen>/press"",
+                    ""interactions"": ""Tap(duration=0.01,pressPoint=0.1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Click"",

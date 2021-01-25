@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using AlgebraGlobalPrototyle.Inputs;
+using AlgebraGlobalPrototype.Abstracts.Controllers;
 using AlgebraGlobalPrototype.Abstracts.Inputs;
 using UnityEngine;
 
@@ -33,11 +34,16 @@ namespace AlgebraGlobalPrototype.Controllers
             if (_isPress)
             {
                 Vector3 screenCoordinated = new Vector3(_screenPosition.x, _screenPosition.y,_camera.nearClipPlane);
-                Ray ray = Camera.main.ScreenPointToRay(screenCoordinated);
+                Ray ray = _camera.ScreenPointToRay(screenCoordinated);
             
                 if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
                 {
-                    Debug.Log(hit.collider.gameObject.name);
+                    IUnitController unitController = hit.collider.GetComponent<IUnitController>();
+
+                    if (unitController != null)
+                    {
+                        unitController.Bouncing();
+                    }
                 }
                 
                 _isPress = false;
@@ -45,4 +51,3 @@ namespace AlgebraGlobalPrototype.Controllers
         }
     }    
 }
-
