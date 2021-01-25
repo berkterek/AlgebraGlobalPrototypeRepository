@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using AlgebraGlobalPrototyle.Inputs;
+using AlgebraGlobalPrototype.Abstracts.Inputs;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace AlgebraGlobalPrototyle.Inputs
 {
-    public class MyInput
+    public class MyInput : IPlayerInput
     {
         MyInputAction _inputAction;
 
