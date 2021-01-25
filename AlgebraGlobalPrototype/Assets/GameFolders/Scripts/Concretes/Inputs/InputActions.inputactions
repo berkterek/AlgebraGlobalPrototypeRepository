@@ -8,8 +8,16 @@
                 {
                     "name": "Click",
                     "type": "PassThrough",
+                    "id": "e1246ac7-1a2e-4614-996d-51a87d06cba8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap(duration=0.01)"
+                },
+                {
+                    "name": "ClickPosition",
+                    "type": "PassThrough",
                     "id": "bbbed036-a79f-4452-ba71-52306b6f925c",
-                    "expectedControlType": "",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -18,19 +26,19 @@
                 {
                     "name": "",
                     "id": "df82290d-01c0-4d3f-955c-b40aa54b1c0a",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Click",
+                    "action": "ClickPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "5d1d3b92-abbf-471c-80c7-47dc056a45d6",
-                    "path": "<Touchscreen>/primaryTouch/press",
-                    "interactions": "Press",
+                    "id": "76e661a5-a622-4d5f-9df1-9975d84ebbb8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Click",
