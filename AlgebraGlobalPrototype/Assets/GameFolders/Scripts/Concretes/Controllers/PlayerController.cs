@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using AlgebraGlobalPrototyle.Inputs;
 using AlgebraGlobalPrototype.Abstracts.Controllers;
 using AlgebraGlobalPrototype.Abstracts.Inputs;
+using AlgebraGlobalPrototype.Abstracts.Movements;
+using AlgebraGlobalPrototype.Movements;
 using UnityEngine;
 
 namespace AlgebraGlobalPrototype.Controllers
@@ -10,14 +12,14 @@ namespace AlgebraGlobalPrototype.Controllers
     public class PlayerController : MonoBehaviour
     {
         IPlayerInput _input;
+        ISelectedObject _selectedObject;
         Vector3 _screenPosition;
-        Camera _camera;
         bool _isPress;
-        
+
         private void Awake()
         {
             _input = new MyInput();
-            _camera = Camera.main;
+            _selectedObject = new SelectedObject(Camera.main);
         }
 
         private void Update()
@@ -33,21 +35,20 @@ namespace AlgebraGlobalPrototype.Controllers
         {
             if (_isPress)
             {
-                Vector3 screenCoordinated = new Vector3(_screenPosition.x, _screenPosition.y,_camera.nearClipPlane);
-                Ray ray = _camera.ScreenPointToRay(screenCoordinated);
-            
-                if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
+                Collider collider = _selectedObject.GetCollider(_screenPosition);
+
+                if (collider != null)
                 {
-                    IUnitController unitController = hit.collider.GetComponent<IUnitController>();
+                    IUnitController unitController = collider.GetComponent<IUnitController>();
 
                     if (unitController != null)
                     {
                         unitController.Bouncing();
-                    }
+                    }    
                 }
-                
+
                 _isPress = false;
             }
         }
-    }    
+    }
 }
