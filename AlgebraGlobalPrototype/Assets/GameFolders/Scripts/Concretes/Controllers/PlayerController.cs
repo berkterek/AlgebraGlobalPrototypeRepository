@@ -9,29 +9,35 @@ using UnityEngine;
 
 namespace AlgebraGlobalPrototype.Controllers
 {
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, IEntityController
     {
-        IPlayerInput _input;
         ISelectedObject _selectedObject;
         Vector3 _screenPosition;
         bool _isPress;
+        
+        public IPlayerInput Input { get; set; }
 
         private void Awake()
         {
-            _input = new MyInput();
+            Input = new MyInput();
             _selectedObject = new SelectedObject(Camera.main);
         }
 
         private void Update()
         {
-            if (_input.IsPress)
+            if (Input.IsPress)
             {
-                _screenPosition = _input.ClickPosition;
+                _screenPosition = Input.ClickPosition;
                 _isPress = true;
             }
         }
 
         private void FixedUpdate()
+        {
+            PressProcess();
+        }
+
+        private void PressProcess()
         {
             if (_isPress)
             {

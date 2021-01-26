@@ -1,0 +1,16 @@
+{
+    "name": "Movements",
+    "references": [
+        "GUID:b5d917cb33e1f3b4d8b7f20af8e865eb",
+        "GUID:91fa05edf49e1c647beb6514bc7210fa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

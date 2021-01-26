@@ -1,0 +1,15 @@
+{
+    "name": "Abstracts.Controllers",
+    "references": [
+        "GUID:b51d7b79787edae48b0e5d0b1f1e7c3f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

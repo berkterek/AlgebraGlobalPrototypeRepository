@@ -16,6 +16,8 @@ namespace AlgebraGlobalPrototype.Controllers
         Rigidbody _rigidbody;
         IJump _jump;
 
+        public float Velocity => _rigidbody.velocity.magnitude;
+
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
