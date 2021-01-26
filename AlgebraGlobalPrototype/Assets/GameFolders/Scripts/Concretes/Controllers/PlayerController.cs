@@ -11,7 +11,8 @@ namespace AlgebraGlobalPrototype.Controllers
 {
     public class PlayerController : MonoBehaviour, IEntityController
     {
-        ISelectedObject _selectedObject;
+        private ISelectedObject _selectedObject;
+
         Vector3 _screenPosition;
         bool _isPress;
         
@@ -28,6 +29,7 @@ namespace AlgebraGlobalPrototype.Controllers
             if (Input.IsPress)
             {
                 _screenPosition = Input.ClickPosition;
+                Debug.Log(_screenPosition);
                 _isPress = true;
             }
         }

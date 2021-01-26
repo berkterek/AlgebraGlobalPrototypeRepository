@@ -6,7 +6,8 @@
         "Tests",
         "Controllers",
         "Abstracts.Inputs",
-        "Abstracts.Controllers"
+        "Abstracts.Controllers",
+        "Abstracts.Movements"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
